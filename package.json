@@ -1,0 +1,38 @@
+{
+  "name": "chatapp",
+  "version": "1.0.0",
+  "description": "Real Time Chat App ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nodemon",
+    "build": "rimraf ./build && tsc",
+    "start:prod": "npm run build && node build/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahulbansiwal/Chat-App.git"
+  },
+  "author": "Rahul Bansiwal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rahulbansiwal/Chat-App/issues"
+  },
+  "homepage": "https://github.com/rahulbansiwal/Chat-App#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.4",
+    "socket.io": "^4.6.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^18.15.11",
+    "nodemon": "^2.0.22",
+    "rimraf": "^5.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}
