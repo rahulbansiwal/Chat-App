@@ -23,6 +23,5 @@ const start = async () => {
         console.log(err);
     }
 };
-
 start();
 
